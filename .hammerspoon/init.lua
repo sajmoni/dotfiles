@@ -10,7 +10,7 @@ units = {
   botleft50     = { x = 0.00, y = 0.50, w = 0.50, h = 0.50 },
   maximum       = { x = 0.00, y = 0.00, w = 1.00, h = 1.00 }
 }
-
+-- Layout
 mash = { 'option', 'ctrl', 'cmd' }
 hs.hotkey.bind(mash, 'right', function() hs.window.focusedWindow():move(units.right50,    nil, true) end)
 hs.hotkey.bind(mash, 'left', function() hs.window.focusedWindow():move(units.left50,     nil, true) end)
@@ -27,3 +27,22 @@ hs.hotkey.bind(mash, 'n', function()
   win:move(win:frame():toUnitRect(screen:frame()), screen:next(), true, 0)
   end
 )
+
+-- Apps
+workApplications = {"Slack", "Hyper", "Chrome", "Code" }
+
+externalMonitor = "DELL U2719D"
+
+focusedScreen = hs.screen.mainScreen():name()
+builtInScreen = hs.screen.primaryScreen():name()
+
+hs.hotkey.bind(mash, "h", function()
+  hs.notify.new({title="Hammerspoon", informativeText="Setting layout"}):send()
+  local windowLayout = {
+    {"Slack", nil, builtInScreen, units.left50,    nil, nil},
+    {"Hyper", nil, builtInScreen, units.right50,    nil, nil},
+    {"Chrome", nil, focusedScreen, units.left50,    nil, nil},
+    {"Code", nil, focusedScreen, units.right50,    nil, nil},
+    }
+    hs.layout.apply(windowLayout)
+end)
