@@ -2,30 +2,24 @@
 
 Not sure what this will be yet.
 
-Brew:
+## How to use
 
-```sh
-./brew.sh
+1. **Clone the repo**
+
+```zsh
+git clone git@github.com:sajmoni/dotfiles.git ~/.dotfiles
 ```
 
-Hammerspoon:
+2. **Run**
 
-`~/.hammerspoon/init.lua`
+```zsh
+./run.sh
+```
 
-Hyper:
+### Generate new Brewfile
 
- - theme
- - pure
- - plugin: pane
- 
-zsh:
-
- - config
- 
-tig:
- 
- - config
- 
-Manually install:
-
- - VS Code
+```zsh
+cd ~/.dotfiles
+rm Brewfile
+brew bundle dump --describe
+```

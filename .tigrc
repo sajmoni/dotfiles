@@ -1,0 +1,12 @@
+bind status D !@?rm %(file)
+bind status C !git commit -v
+bind generic + !git commit --amend -v
+bind main T !@git tag %(prompt) %(commit)
+bind status P !git push origin
+bind status I @sh -c "dirname %(file) >> .gitignore"
+bind refs n !@git branch "%(prompt Enter branch name: )"
+bind status S !?git stash save --keep-index %(prompt)
+bind stash P !git stash pop %(stash)
+bind refs	C	!git checkout %(branch)
+bind generic H @sh -c "open 'https://'$(git remote -v | grep -Eo 'github.com[:/][^.]+' | head -1 | tr : /)'/commit/%(commit)'"
+bind generic B @sh -c "open 'https://'$(git remote -v | grep -Eo 'bitbucket.org[:/][^.]+' | head -1 | tr : /)'/commits/%(commit)'"

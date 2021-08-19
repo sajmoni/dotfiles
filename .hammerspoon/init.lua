@@ -38,6 +38,8 @@ builtInScreen = hs.screen.primaryScreen():name()
 
 hs.hotkey.bind(mash, "h", function()
   hs.notify.new({title="Hammerspoon", informativeText="Setting layout"}):send()
+
+  -- Start the apps if they are not running
   local windowLayout = {
     {"Slack", nil, builtInScreen, units.left50,    nil, nil},
     {"Hyper", nil, builtInScreen, units.right50,    nil, nil},

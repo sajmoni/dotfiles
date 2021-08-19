@@ -101,8 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Misc
-alias zshconfig="code ~/.zshrc"
 alias ll='ls -laG'
+
 # Open code
 alias oc='code .'
 
@@ -120,7 +120,7 @@ alias undo-commit="git reset --soft HEAD^"
 alias stash_show="git stash show -p"
 
 # Yarn
-alias yui="yarn upgrade-interactive --latest"
+alias yui="yarn upgrade-interactive"
 alias ytw="yarn test --watch"
 alias yrefresh="rm -rf node_modules && rm yarn.lock && yarn"
 
