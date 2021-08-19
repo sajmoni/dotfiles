@@ -1,7 +1,5 @@
 # dotfiles
 
-Not sure what this will be yet.
-
 ## How to use
 
 1. **Clone the repo**
