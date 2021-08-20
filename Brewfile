@@ -11,8 +11,6 @@ brew "node"
 brew "thefuck"
 # Text interface for Git repositories
 brew "tig"
-# JavaScript package manager
-brew "yarn"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # Desktop automation application
