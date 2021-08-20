@@ -106,6 +106,8 @@ alias ll='ls -laG'
 # Open code
 alias oc='code .'
 
+alias nr="npm run"
+
 # Git
 alias gst="git status"
 alias gp="git push"
@@ -118,6 +120,7 @@ alias grc="git rebase --continue"
 alias gpf="git push --force-with-lease"
 alias undo-commit="git reset --soft HEAD^"
 alias stash_show="git stash show -p"
+alias qwe-prune="git fetch && git remote update origin --prune && git branch -vv | grep ': gone]' | cut -f 3 -d ' ' | xargs git branch -D"
 
 # Yarn
 alias yui="yarn upgrade-interactive"
@@ -133,6 +136,9 @@ alias magic="fuck"
 precmd() { echo -n -e "\033]0;$(basename "$PWD")\007" }
 
 export PATH="/usr/local/opt/node@14/bin:$PATH"
+
+export PATH="$HOME/Library/Application\ Support/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS:$PATH"
+# alias aseprite="$HOME/Library/Application\ Support/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS/aseprite"
 
 # Activate pure prompt
 autoload -U promptinit; promptinit
