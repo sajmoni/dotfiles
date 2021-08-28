@@ -11,6 +11,9 @@ brew "node"
 brew "thefuck"
 # Text interface for Git repositories
 brew "tig"
+# GitHub command-line tool
+brew "gh"
+# Pretty, minimal and fast ZSH prompt
 brew "pure"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
