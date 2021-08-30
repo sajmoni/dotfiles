@@ -5,6 +5,8 @@
 // Colors from the hyper-snazzy theme
 const foregroundColor = "#eff0eb";
 const backgroundColor = "#282a36";
+const white = "#f1f1f0";
+const lightBlack = "#686868";
 
 // Colors from the tokyo-night theme
 const red = "#f7768e";
@@ -34,7 +36,7 @@ module.exports = {
     fontWeightBold: "bold",
 
     // line height as a relative unit
-    lineHeight: 1,
+    lineHeight: 1.4,
 
     // letter spacing as a relative unit
     letterSpacing: 0,
@@ -125,8 +127,8 @@ module.exports = {
       blue,
       magenta,
       cyan,
-      white: "#f1f1f0",
-      lightBlack: "#686868",
+      white,
+      lightBlack,
       lightRed: red,
       lightGreen: green,
       lightYellow: yellow,
