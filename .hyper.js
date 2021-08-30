@@ -2,6 +2,16 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
+// Colors are from the hyper-snazzy theme
+const foregroundColor = "#eff0eb";
+const backgroundColor = "#282a36";
+const red = "#ff5c57";
+const green = "#5af78e";
+const yellow = "#f3f99d";
+const blue = "#57c7ff";
+const magenta = "#ff6ac1";
+const cyan = "#9aedfe";
+
 module.exports = {
   config: {
     // choose either `'stable'` for receiving highly polished,
@@ -28,10 +38,10 @@ module.exports = {
     letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: "rgba(248,28,229,0.8)",
+    cursorColor: "#97979b",
 
     // terminal text color under BLOCK cursor
-    cursorAccentColor: "#000",
+    cursorAccentColor: backgroundColor,
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
     cursorShape: "BLOCK",
@@ -40,20 +50,52 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: "#fff",
+    foregroundColor,
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: "#1C1F26",
+    backgroundColor,
 
     // terminal selection color
-    selectionColor: "rgba(248,28,229,0.3)",
+    selectionColor: "rgba(151, 151, 155, 0.2)",
 
     // border color (window, tabs)
-    borderColor: "#333",
+    borderColor: "#135564",
 
     // custom CSS to embed in the main window
-    css: "",
+    css: `
+		/* Hide title when only one tab */
+		.tabs_title {
+			display: none !important;
+		}
+		/* Add a highlight line below the active tab */
+		.tab_tab::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background-color: rgba(255, 106, 193, 0.4);
+			transform: scaleX(0);
+			will-change: transform;
+		}
+		.tab_tab.tab_active::before {
+			transform: scaleX(1);
+			transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
+		}
+		/* Fade the title of inactive tabs and the content of inactive panes */
+		.tab_text,
+		.term_term {
+			opacity: 0.6;
+			will-change: opacity;
+		}
+		.tab_active .tab_text,
+		.term_active .term_term {
+			opacity: 1;
+			transition: opacity 0.12s ease-in-out;
+		}
+	`,
 
     // custom CSS to embed in the terminal window
     termCSS: "",
@@ -74,22 +116,22 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: "#000000",
-      red: "#C51E14",
-      green: "#1DC121",
-      yellow: "#C7C329",
-      blue: "#0A2FC4",
-      magenta: "#C839C5",
-      cyan: "#20C5C6",
-      white: "#C7C7C7",
+      black: backgroundColor,
+      red,
+      green,
+      yellow,
+      blue,
+      magenta,
+      cyan,
+      white: "#f1f1f0",
       lightBlack: "#686868",
-      lightRed: "#FD6F6B",
-      lightGreen: "#67F86F",
-      lightYellow: "#FFFA72",
-      lightBlue: "#6A76FB",
-      lightMagenta: "#FD7CFC",
-      lightCyan: "#68FDFE",
-      lightWhite: "#FFFFFF",
+      lightRed: red,
+      lightGreen: green,
+      lightYellow: yellow,
+      lightBlue: blue,
+      lightMagenta: magenta,
+      lightCyan: cyan,
+      lightWhite: foregroundColor,
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -147,7 +189,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-pane", "hypercwd", "hyper-snazzy"],
+  plugins: ["hyper-pane", "hypercwd"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
