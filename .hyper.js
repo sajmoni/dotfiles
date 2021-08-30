@@ -2,15 +2,17 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
-// Colors are from the hyper-snazzy theme
+// Colors from the hyper-snazzy theme
 const foregroundColor = "#eff0eb";
 const backgroundColor = "#282a36";
-const red = "#ff5c57";
-const green = "#5af78e";
-const yellow = "#f3f99d";
-const blue = "#57c7ff";
-const magenta = "#ff6ac1";
-const cyan = "#9aedfe";
+
+// Colors from the tokyo-night theme
+const red = "#f7768e";
+const green = "#9ece6a";
+const yellow = "#e0af68";
+const blue = "#7dcfff";
+const magenta = "#bb9af7";
+const cyan = "#73daca";
 
 module.exports = {
   config: {
