@@ -19,3 +19,7 @@ echo ""
 echo "== Install global NPM packages =="
 ./npm.sh
 echo ""
+
+echo "== Misc =="
+gh alias set home "repo view --web"
+echo ""
