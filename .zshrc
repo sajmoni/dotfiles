@@ -107,6 +107,7 @@ alias ll='ls -laG'
 alias oc='code .'
 
 alias nr="npm run"
+alias hub="gh repo view --web"
 
 # Git
 alias gst="git status"
