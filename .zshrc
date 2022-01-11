@@ -136,7 +136,7 @@ alias magic="fuck"
 # Set the terminal title
 precmd() { echo -n -e "\033]0;$(basename "$PWD")\007" }
 
-export PATH="/usr/local/opt/node@14/bin:$PATH"
+export PATH="/usr/local/opt/node@16/bin:$PATH"
 
 export PATH="$HOME/Library/Application\ Support/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS:$PATH"
 # alias aseprite="$HOME/Library/Application\ Support/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS/aseprite"
