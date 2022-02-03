@@ -145,5 +145,8 @@ export PATH="$HOME/Library/Application\ Support/Steam/steamapps/common/Aseprite/
 autoload -U promptinit; promptinit
 prompt pure
 
+# In npm run scripts you can execute locally installed binaries by name. This enables the same outside npm.
+export PATH="$(npm-run-path)"
+
 # Has to be the last thing here
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
