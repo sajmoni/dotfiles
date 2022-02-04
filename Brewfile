@@ -6,7 +6,7 @@ brew "autojump"
 # Distributed revision control system
 brew "git"
 # Platform built on V8 to build network applications
-brew "node"
+brew "node@16"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Text interface for Git repositories
