@@ -91,9 +91,12 @@ module.exports = {
 		/* Fade the title of inactive tabs and the content of inactive panes */
 		.tab_text,
 		.term_term {
-			opacity: 0.6;
+			opacity: 0.3;
 			will-change: opacity;
 		}
+    .tab_active {
+      background-color: rgba(255, 106, 193, 0.2);
+    }
 		.tab_active .tab_text,
 		.term_active .term_term {
 			opacity: 1;
