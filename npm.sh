@@ -1,1 +1,1 @@
-npm install --global gh-home
+npm install --global ts-prune
