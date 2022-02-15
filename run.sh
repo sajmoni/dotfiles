@@ -6,6 +6,7 @@ mkdir ~/.hammerspoon
 ln -s ~/.dotfiles/.hammerspoon/init.lua ~/.hammerspoon/init.lua
 ln -s ~/.dotfiles/.hyper.js ~/.hyper.js
 ln -s ~/.dotfiles/.tigrc ~/.tigrc
+ln -s ~/.dotfiles/.vimrc ~/.vimrc
 echo ""
 
 echo "== Install Homebrew =="
