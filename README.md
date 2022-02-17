@@ -1,5 +1,10 @@
 # dotfiles
 
+This project does two things when run.
+
+1. Symlinks configs for `zsh`, `hyper`, `hammerspoon`, `tig` and `vim`.
+2. Installs apps from `homebrew` and `npm`.
+
 ## How to use
 
 1. **Clone the repo**
