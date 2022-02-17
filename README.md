@@ -17,7 +17,5 @@ git clone git@github.com:sajmoni/dotfiles.git ~/.dotfiles
 ### Generate new Brewfile
 
 ```zsh
-cd ~/.dotfiles
-rm Brewfile
-brew bundle dump --describe
+./createBrewfile.sh
 ```
