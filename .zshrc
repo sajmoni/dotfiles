@@ -107,6 +107,7 @@ alias ll='ls -laG'
 alias oc='code .'
 
 alias nr="npm run"
+alias tsw="npx tsc --watch"
 
 # Git
 alias gst="git status"
