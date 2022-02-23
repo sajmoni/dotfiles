@@ -1,6 +1,11 @@
 # dotfiles
 
-This project does two things when run.
+The purpose of this repo is to:
+
+1. Share configs between computers
+2. Easily setup new computers with tools and apps
+
+It does two things when run:
 
 1. Symlinks configs for `zsh`, `hyper`, `hammerspoon`, `tig` and `vim`.
 2. Installs apps from `homebrew` and `npm`.
