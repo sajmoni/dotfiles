@@ -1,6 +1,5 @@
-ln -s ~/.dotfiles/script/.zshrc ~/.zshrc
-mkdir ~/.hammerspoon
-ln -s ~/.dotfiles/script/.hammerspoon/init.lua ~/.hammerspoon/init.lua
-ln -s ~/.dotfiles/script/.hyper.js ~/.hyper.js
-ln -s ~/.dotfiles/script/.tigrc ~/.tigrc
-ln -s ~/.dotfiles/script/.vimrc ~/.vimrc
+ln -s ~/.dotfiles/config/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/config/.hammerspoon/init.lua ~/.hammerspoon/init.lua
+ln -s ~/.dotfiles/config/.hyper.js ~/.hyper.js
+ln -s ~/.dotfiles/config/.tigrc ~/.tigrc
+ln -s ~/.dotfiles/config/.vimrc ~/.vimrc
