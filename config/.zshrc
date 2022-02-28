@@ -118,11 +118,14 @@ alias gsh="git stash"
 alias gshp="git stash pop"
 alias gco="git checkout"
 alias gsync="gsh && gpr && gshp"
+# Rebase a feature branch on the main brannch
+# TODO: Make this work with any main branch
+alias grm="git rebase origin/stable"
 # GIT_EDITOR=true Does not open editor to edit commit message
 alias grc="GIT_EDITOR=true git rebase --continue"
 alias gpf="git push --force-with-lease"
 alias undo-commit="git reset --soft HEAD^"
-alias stash_show="git stash show -p"
+alias gss="git stash show -p"
 alias qwe-prune="git fetch && git remote update origin --prune && git branch -vv | grep ': gone]' | cut -f 3 -d ' ' | xargs git branch -D"
 
 # Yarn
@@ -149,6 +152,8 @@ prompt pure
 
 # In npm run scripts you can execute locally installed binaries by name. This enables the same outside npm.
 export PATH="$(npm-run-path)"
+
+export PATH="/usr/local/opt/libpq/bin:$PATH"
 
 # Has to be the last thing here
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

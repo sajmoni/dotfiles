@@ -21,11 +21,11 @@ git clone git@github.com:sajmoni/dotfiles.git ~/.dotfiles
 2. **Run**
 
 ```zsh
-./run.sh
+./script/run.sh
 ```
 
 ### Generate new Brewfile
 
 ```zsh
-./createBrewfile.sh
+./script/createBrewfile.sh
 ```

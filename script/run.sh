@@ -1,12 +1,12 @@
 set -e
 
 echo "== Symlink files =="
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+ln -s ~/.dotfiles/script/.zshrc ~/.zshrc
 mkdir ~/.hammerspoon
-ln -s ~/.dotfiles/.hammerspoon/init.lua ~/.hammerspoon/init.lua
-ln -s ~/.dotfiles/.hyper.js ~/.hyper.js
-ln -s ~/.dotfiles/.tigrc ~/.tigrc
-ln -s ~/.dotfiles/.vimrc ~/.vimrc
+ln -s ~/.dotfiles/script/.hammerspoon/init.lua ~/.hammerspoon/init.lua
+ln -s ~/.dotfiles/script/.hyper.js ~/.hyper.js
+ln -s ~/.dotfiles/script/.tigrc ~/.tigrc
+ln -s ~/.dotfiles/script/.vimrc ~/.vimrc
 echo ""
 
 echo "== Install Homebrew =="
@@ -18,7 +18,7 @@ brew bundle --file ~/.dotfiles/Brewfile
 echo ""
 
 echo "== Install global NPM packages =="
-./npm.sh
+./script/npm.sh
 echo ""
 
 echo "== Misc =="
