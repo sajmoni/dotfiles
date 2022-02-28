@@ -108,6 +108,7 @@ alias oc='code .'
 
 alias nr="npm run"
 alias tsw="npx tsc --watch"
+alias dps='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"'
 
 # Git
 alias gst="git status"
