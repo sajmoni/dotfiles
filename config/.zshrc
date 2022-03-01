@@ -108,7 +108,11 @@ alias oc='code .'
 
 alias nr="npm run"
 alias tsw="npx tsc --watch"
+
+# Docker
 alias dps='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"'
+# Cleanup exited containers
+alias drm='docker rm $(docker ps -a -f status=exited -q)'
 
 # Git
 alias gst="git status"
