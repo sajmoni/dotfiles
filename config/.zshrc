@@ -107,6 +107,7 @@ alias ll='ls -laG'
 alias oc='code .'
 
 alias nr="npm run"
+alias npo="npm outdated"
 alias tsw="npx tsc --watch"
 
 # Docker
