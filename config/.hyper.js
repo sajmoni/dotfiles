@@ -91,7 +91,8 @@ module.exports = {
 		/* Fade the title of inactive tabs and the content of inactive panes */
 		.tab_text,
 		.term_term {
-			opacity: 0.3;
+      /* Opacity is set by the "tabs-enhanced" plugin */
+			opacity: 1;
 			will-change: opacity;
 		}
     .tab_active {
