@@ -132,11 +132,12 @@ alias gpf="git push --force-with-lease"
 alias undo-commit="git reset --soft HEAD^"
 alias gss="git stash show -p"
 alias qwe-prune="git fetch && git remote update origin --prune && git branch -vv | grep ': gone]' | cut -f 3 -d ' ' | xargs git branch -D"
+# npm clean install
+alias nci="rm -rf node_modules && rm package-lock.json && npm i"
 
 # Yarn
 alias yui="yarn upgrade-interactive"
 alias ytw="yarn test --watch"
-alias yrefresh="rm -rf node_modules && rm yarn.lock && yarn"
 
 # The Fuck
 # Change "theFuck"s "fuck" command to "magic"
