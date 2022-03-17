@@ -121,7 +121,7 @@ alias drm='docker rm $(docker ps -a -f status=exited -q)'
 alias gst="git status"
 alias gp="git push"
 alias gpr="git pull --rebase"
-alias gsh="git stash"
+alias gsh="git stash -u -k"
 alias gshp="git stash pop"
 alias gco="git checkout"
 alias gsync="gsh && gpr && gshp"
