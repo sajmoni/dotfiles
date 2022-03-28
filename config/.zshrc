@@ -124,6 +124,8 @@ alias gpr="git pull --rebase"
 alias gsh="git stash -u -k"
 alias gshp="git stash pop"
 alias gco="git checkout"
+# git create branch
+alias gcb="git-ensure -a -b stable && git checkout -b"
 alias gsync="gsh && gpr && gshp"
 # Rebase a feature branch on the main brannch
 # TODO: Make this work with any main branch
