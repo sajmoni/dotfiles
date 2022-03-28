@@ -15,7 +15,7 @@ It does two things when run:
 1. **Clone the repo**
 
 ```zsh
-git clone git@github.com:sajmoni/dotfiles.git ~/.dotfiles
+git clone git@github.com:sajmoni/dotfiles.git ~/dotfiles
 ```
 
 2. **Run**
