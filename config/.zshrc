@@ -105,8 +105,8 @@ alias ll='ls -laG'
 
 # Open code
 alias oc='code .'
-# Open all files with merge conflicts
-alias opm='git diff --name-only | uniq | xargs code'
+# Open merge conflicts - Open all files with merge conflicts
+alias omc='git diff --name-only | uniq | xargs code'
 
 alias nr="npm run"
 alias npo="npm outdated"
