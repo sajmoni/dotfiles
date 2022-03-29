@@ -39,7 +39,6 @@ alias oc='code .'
 # Open merge conflicts - Open all files with merge conflicts
 alias omc='git diff --name-only | uniq | xargs code'
 alias nr="npm run"
-alias npo="npm outdated"
 alias tsw="npx tsc --watch"
 # Better docker ps
 alias dps='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"'
@@ -69,6 +68,10 @@ alias nci="rm -rf node_modules && rm package-lock.json && npm i"
 # Change "theFuck"s "fuck" command to "magic"
 eval $(thefuck --alias)
 alias magic="fuck"
+# View outdated dependencies
+alias tm="taze major"
+# Update all outdated dependencies
+alias tmw="taze major -w"
 
 # -------------------------------- #
 # Functions
