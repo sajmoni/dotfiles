@@ -70,6 +70,8 @@ alias magic="fuck"
 alias tm="taze major"
 # Update all outdated dependencies
 alias tmw="taze major -w"
+alias nco="npx cypress open"
+alias ncoc="npx cypress open-ct"
 
 # -------------------------------- #
 # Functions
