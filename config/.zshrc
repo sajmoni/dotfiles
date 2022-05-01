@@ -99,7 +99,7 @@ function rename_branch() {
 # Path
 # -------------------------------- #
 
-export PATH="/usr/local/opt/node@16/bin:$PATH"
+export PATH="/usr/local/opt/node@18/bin:$PATH"
 
 export PATH="$HOME/Library/Application\ Support/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS:$PATH"
 # alias aseprite="$HOME/Library/Application\ Support/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS/aseprite"
