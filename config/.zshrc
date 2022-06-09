@@ -34,6 +34,8 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls -laG'
 # Open code
 alias oc='code .'
+# Open (code) and start
+alias oas="oc && nr start"
 # Open merge conflicts - Open all files with merge conflicts
 alias omc='git diff --name-only | uniq | xargs code'
 alias nr="npm run"
