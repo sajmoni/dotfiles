@@ -51,6 +51,7 @@ alias gpr="git pull --rebase"
 alias gsh="git stash -u -k"
 alias gshp="git stash pop"
 alias gco="git checkout"
+alias sb="switch-branch"
 # git create branch
 alias gcb="git-ensure -s -b stable,main,master && git checkout -b"
 alias gsync="gsh && gpr && gshp"
