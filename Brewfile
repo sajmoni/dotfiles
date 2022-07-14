@@ -7,8 +7,6 @@ brew "autojump"
 brew "git"
 # Platform built on V8 to build network applications
 brew "node@18"
-# Programmatically correct mistyped console commands
-brew "thefuck"
 # Text interface for Git repositories
 brew "tig"
 # GitHub command-line tool

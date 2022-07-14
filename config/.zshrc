@@ -67,9 +67,6 @@ alias gss="git stash show -p"
 alias qwe-prune="git fetch && git remote update origin --prune && git branch -vv | grep ': gone]' | cut -f 3 -d ' ' | xargs git branch -D"
 # npm clean install
 alias nci="rm -rf node_modules && rm package-lock.json && npm i"
-# Change "theFuck"s "fuck" command to "magic"
-eval $(thefuck --alias)
-alias magic="fuck"
 # View outdated dependencies
 alias tm="taze major"
 # Update all outdated dependencies
