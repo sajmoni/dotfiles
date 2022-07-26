@@ -1,7 +1,7 @@
 set -e
 
 echo "== Symlink files =="
-mkdir ~/.hammerspoon
+mkdir -p ~/.hammerspoon
 ./script/createSymlinks.sh
 echo ""
 
