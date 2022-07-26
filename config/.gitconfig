@@ -1,0 +1,8 @@
+[include]
+    path = ./.local.gitconfig
+[init]
+	defaultBranch = main
+[core]
+	ignorecase = false
+[push]
+	autoSetupRemote = true
