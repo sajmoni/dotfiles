@@ -84,6 +84,9 @@ module.exports = {
 			transform: scaleX(0);
 			will-change: transform;
 		}
+    .term_active {
+      padding: 0 16px;
+    }
 		.tab_tab.tab_active::before {
 			transform: scaleX(1);
 			transition: all 200ms cubic-bezier(0, 0, 0.2, 1);
