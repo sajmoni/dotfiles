@@ -24,6 +24,16 @@ git clone git@github.com:sajmoni/dotfiles.git ~/dotfiles
 ./script/run.sh
 ```
 
+3: **Local gitconfig**
+
+Add user info to `~/.local.gitconfig`
+
+```
+[user]
+	email = <enter email>
+	name = <enter name>
+```
+
 ### Generate new Brewfile
 
 ```zsh
