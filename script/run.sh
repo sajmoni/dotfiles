@@ -2,6 +2,7 @@ set -e
 
 echo "== Symlink files =="
 mkdir -p ~/.hammerspoon
+touch ~/.local.gitconfig
 ./script/createSymlinks.sh
 echo ""
 
