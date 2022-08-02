@@ -73,6 +73,8 @@ alias tm="taze major"
 alias tmw="taze major -w"
 alias nco="npx cypress open"
 alias ncoc="npx cypress open-ct"
+# Push and create PR
+alias pr="git push && gh pr create --draft --fill"
 
 # -------------------------------- #
 # Functions
