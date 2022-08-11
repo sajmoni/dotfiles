@@ -45,7 +45,7 @@ alias dps='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"'
 # Cleanup exited containers
 alias drm='docker rm $(docker ps -a -f status=exited -q)'
 alias gc="git commit"
-alias wip="git commit -n -m \"WIP\""
+alias wip="git add . && git commit -n -m \"WIP\""
 alias gst="git status"
 alias gp="git push"
 alias gpr="git pull --rebase"
