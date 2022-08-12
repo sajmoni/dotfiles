@@ -71,8 +71,6 @@ alias nci="rm -rf node_modules && rm package-lock.json && npm i"
 alias tm="taze major"
 # Update all outdated dependencies
 alias tmw="taze major -w"
-alias nco="npx cypress open"
-alias ncoc="npx cypress open-ct"
 # Push and create PR
 alias pr="git push && gh pr create --draft --fill"
 
