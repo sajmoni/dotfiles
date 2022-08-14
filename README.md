@@ -7,7 +7,7 @@ The purpose of this repo is to:
 
 It does two things when run:
 
-1. Symlinks configs for `zsh`, `hyper`, `hammerspoon`, `tig` and `vim`.
+1. Symlinks configs for `git`, `zsh`, `hyper`, `hammerspoon`, `tig` and `vim`.
 2. Installs apps from `homebrew` and `npm`.
 
 ## How to use
@@ -24,7 +24,7 @@ git clone git@github.com:sajmoni/dotfiles.git ~/dotfiles
 ./script/run.sh
 ```
 
-3: **Local gitconfig**
+3. **Local gitconfig**
 
 Add user info to `~/.local.gitconfig`
 
@@ -34,7 +34,7 @@ Add user info to `~/.local.gitconfig`
 	name = <enter name>
 ```
 
-### Generate new Brewfile
+## Generate new Brewfile
 
 ```zsh
 ./script/createBrewfile.sh
