@@ -62,10 +62,8 @@ alias grm="git rebase origin/stable"
 # GIT_EDITOR=true Does not open editor to edit commit message
 alias grc="GIT_EDITOR=true git rebase --continue"
 alias gpf="git push --force-with-lease"
-# Undo commit - Undo latest commit and unstage files
-alias uc="git reset --soft HEAD^ && git reset"
-# Undo commit and open files
-alias ucao="undo-commit && omc"
+# Undo commit - Undo latest commit, unstage files and open files
+alias uc="git reset --soft HEAD^ && git reset && omc"
 alias gss="git stash show -p"
 alias qwe-prune="git fetch && git remote update origin --prune && git branch -vv | grep ': gone]' | cut -f 3 -d ' ' | xargs git branch -D"
 # npm clean install
