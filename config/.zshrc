@@ -54,11 +54,11 @@ alias gshp="git stash pop"
 alias gco="git checkout"
 alias sb="switch-branch"
 # git create branch
-alias gcb="git-ensure -s -b stable,main,master && git checkout -b"
+alias gcb="git-ensure --synced --branches stable,main,master && git checkout -b"
 alias gsync="gsh && gpr && gshp"
 # Rebase a feature branch on the main brannch
 # TODO: Make this work with any main branch
-alias grm="git rebase origin/stable"
+alias grm="git-ensure --clean --synced && git rebase origin/stable"
 # GIT_EDITOR=true Does not open editor to edit commit message
 alias grc="GIT_EDITOR=true git rebase --continue"
 alias gpf="git push --force-with-lease"
