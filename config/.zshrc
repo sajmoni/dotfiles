@@ -73,9 +73,9 @@ alias tm="taze major"
 # Update all outdated dependencies
 alias tmw="taze major -w"
 # Push and create PR
-alias pr="git push && gh pr create --fill"
+alias pr="git push && gh pr create --fill && gh prv"
 # Push and create draft PR
-alias draft="git push && gh pr create --draft --fill"
+alias draft="git push && gh pr create --draft --fill && gh prv"
 
 # -------------------------------- #
 # Functions
