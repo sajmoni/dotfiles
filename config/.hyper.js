@@ -80,7 +80,7 @@ module.exports = {
 			left: 0;
 			right: 0;
 			height: 1px;
-			background-color: rgba(255, 106, 193, 0.4);
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 			transform: scaleX(0);
 			will-change: transform;
 		}
