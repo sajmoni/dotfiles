@@ -51,10 +51,10 @@ alias gp="git push"
 alias gpr="git pull --rebase"
 alias gsh="git stash -u -k"
 alias gshp="git stash pop"
-alias gco="git checkout"
+alias gs="git switch"
 alias sb="switch-branch"
 # git create branch
-alias gcb="git-ensure --synced --branches stable,main,master && git checkout -b"
+alias gcb="git-ensure --synced --branches stable,main,master && git switch -c"
 alias gsync="gsh && gpr && gshp"
 # Rebase a feature branch on the main brannch
 alias grm="git-ensure --clean --synced -b '' && git fetch && git rebase origin/HEAD"
