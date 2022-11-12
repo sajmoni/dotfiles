@@ -18,6 +18,8 @@ const cyan = "#73daca";
 
 module.exports = {
   config: {
+    // Display more lines
+    scrollback: 3000,
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: "stable",
