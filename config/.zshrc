@@ -122,3 +122,6 @@ export PATH="/usr/local/opt/libpq/bin:$PATH"
 # Activate pure prompt
 autoload -U promptinit; promptinit
 prompt pure
+
+# Some tools require this
+export EDITOR="code"

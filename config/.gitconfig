@@ -4,5 +4,6 @@
 	defaultBranch = main
 [core]
 	ignorecase = false
+	editor=vim
 [push]
 	autoSetupRemote = true
