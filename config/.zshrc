@@ -36,8 +36,9 @@ alias ll='ls -laG'
 alias oc='code .'
 # Open (code) and start
 alias oas="oc && nr start"
-# Open merge conflicts - Open all files with merge conflicts
-alias omc='git diff --name-only | uniq | xargs code'
+# Open unstaged files
+# Can be used for opening all files with merge conflicts
+alias ouf='git diff --name-only | uniq | xargs code'
 alias nr="npm run"
 alias tsw="npx tsc --watch"
 # Better docker ps
