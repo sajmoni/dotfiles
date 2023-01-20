@@ -79,6 +79,8 @@ alias tmi="taze major -w && npm i"
 alias pr="git push && gh pr create --fill && gh prv && gs -"
 # Push and create draft PR
 alias draft="git push && gh pr create --draft --fill && gh prv"
+# Git quick commit
+alias gqc="git add . && git commit"
 
 # -------------------------------- #
 # Functions
