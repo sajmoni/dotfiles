@@ -72,8 +72,8 @@ alias qwe-prune="git fetch && git remote update origin --prune && git branch -vv
 alias nci="rm -rf node_modules && rm package-lock.json && npm i"
 # View outdated dependencies
 alias tm="taze major"
-# Update all outdated dependencies
-alias tmw="taze major -w"
+# Taze major install
+alias tmi="taze major -w && npm i"
 # Push and create PR
 # TODO: Go back to the main branch instead of latest
 alias pr="git push && gh pr create --fill && gh prv && gs -"
