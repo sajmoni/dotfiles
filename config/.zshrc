@@ -55,7 +55,7 @@ alias gshp="git stash pop"
 alias gs="git switch"
 alias sb="switch-branch"
 # git create branch
-alias gcb="git-ensure --synced --branches stable,main,master && git switch -c"
+alias gcb="git-ensure --synced --branches main,master && git switch -c"
 alias gsync="gsh && gpr && gshp"
 # Rebase a feature branch on the main brannch
 alias grm="git-ensure --clean --synced -b '' && git fetch && git rebase origin/HEAD"
