@@ -74,6 +74,8 @@ alias nci="rm -rf node_modules && rm package-lock.json && npm i"
 alias tm="taze major"
 # Taze major install
 alias tmi="taze major -w && npm i"
+# Taze major global
+alias tmg="taze major -g -i"
 # Push and create PR
 # TODO: Go back to the main branch instead of latest
 alias pr="git push && gh pr create --fill && gh prv && gs -"
