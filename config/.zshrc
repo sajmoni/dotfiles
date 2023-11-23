@@ -83,6 +83,7 @@ alias pr="git push && gh pr create --fill && gh prv && gs -"
 alias draft="git push && gh pr create --draft --fill && gh prv"
 # Git quick commit
 alias gqc="git add . && git commit"
+alias upgrade-all="npm -g upgrade ; brew upgrade"
 
 # -------------------------------- #
 # Functions
