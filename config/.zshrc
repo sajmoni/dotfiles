@@ -131,3 +131,7 @@ prompt pure
 
 # Some tools require this
 export EDITOR="code"
+
+# Load local zshrc
+source ~/.local.zshrc
+

@@ -1,8 +1,11 @@
 set -e
 
+echo "== Create local configs"
+touch ~/.local.gitconfig
+touch ~/.local.zshrc
+
 echo "== Symlink files =="
 mkdir -p ~/.hammerspoon
-touch ~/.local.gitconfig
 ./script/createSymlinks.sh
 echo ""
 

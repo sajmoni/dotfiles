@@ -24,9 +24,11 @@ git clone git@github.com:sajmoni/dotfiles.git ~/dotfiles
 ./script/run.sh
 ```
 
-3. **Local gitconfig**
+3. **Local configs**
 
-Add user info to `~/.local.gitconfig`
+There is a "local" untracked equivalent of all configs. Put stuff here that you don't want to share.
+
+E.g. `~/.local.gitconfig`
 
 ```
 [user]
