@@ -14,7 +14,7 @@ echo "== Install Homebrew =="
 echo ""
 
 echo "== Install from Brewfile =="
-brew bundle --file ~/.dotfiles/Brewfile
+brew bundle --file ./Brewfile
 echo ""
 
 echo "== Install global NPM packages =="
