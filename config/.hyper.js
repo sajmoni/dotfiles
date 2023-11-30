@@ -8,13 +8,12 @@ const backgroundColor = "#282a36";
 const white = "#f1f1f0";
 const lightBlack = "#686868";
 
-// Colors from the tokyo-night theme
-const red = "#f7768e";
-const green = "#9ece6a";
-const yellow = "#e0af68";
-const blue = "#7dcfff";
-const magenta = "#bb9af7";
-const cyan = "#73daca";
+const red = "#cc2947";
+const green = "#7fcf29";
+const yellow = "#e09016";
+const blue = "#19abff";
+const magenta = "#7631f7";
+const cyan = "#26bfa8";
 
 module.exports = {
   config: {
@@ -44,7 +43,7 @@ module.exports = {
     letterSpacing: 0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: "#97979b",
+    cursorColor: cyan,
 
     // terminal text color under BLOCK cursor
     cursorAccentColor: backgroundColor,
