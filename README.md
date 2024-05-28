@@ -26,15 +26,10 @@ git clone git@github.com:sajmoni/dotfiles.git ~/dotfiles
 
 3. **Local configs**
 
-There is a "local" untracked equivalent of all configs. Put stuff here that you don't want to share.
+There is a "local" untracked equivalent of configs. Put stuff here that you don't want to share.
 
-E.g. `~/.local.gitconfig`
-
-```
-[user]
-	email = <enter email>
-	name = <enter name>
-```
+- `~/.local.gitconfig`
+- `~/.local.zshrc`
 
 ## Generate new Brewfile
 
