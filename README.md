@@ -26,7 +26,7 @@ git clone git@github.com:sajmoni/dotfiles.git ~/dotfiles
 
 3. **Local configs**
 
-There is a "local" untracked equivalent of configs. Put stuff here that you don't want to share.
+There are "local" untracked configs. Put stuff here that you don't want to share.
 
 - `~/.local.gitconfig`
 - `~/.local.zshrc`
