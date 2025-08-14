@@ -132,8 +132,6 @@ prompt pure
 # Some tools require this
 export EDITOR="code"
 
-# Needed for nix
-eval "$(direnv hook zsh)"
-
 # Load local zshrc
 source ~/.local.zshrc
+
