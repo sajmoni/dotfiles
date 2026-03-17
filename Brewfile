@@ -6,7 +6,7 @@ brew "autojump"
 # Distributed revision control system
 brew "git"
 # Platform built on V8 to build network applications
-brew "node@22"
+brew "node@24"
 # Text interface for Git repositories
 brew "tig"
 # GitHub command-line tool
